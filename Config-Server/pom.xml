@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.plataform</groupId>
-	<artifactId>Eureka-Server</artifactId>
+	<artifactId>Config-Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
@@ -33,13 +33,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -66,25 +65,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
 
 </project>

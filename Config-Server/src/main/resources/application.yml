@@ -1,0 +1,22 @@
+  server:
+    port: 8888
+
+  spring:
+    application:
+      name: Config-Server
+    profiles:
+      active: native
+    cloud:
+      loadbalancer:
+        cache:
+          enabled: false
+      config:
+        server:
+          native:
+            search-locations: classpath:/Config
+
+  eureka:
+    client:
+      fetch-registry: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
