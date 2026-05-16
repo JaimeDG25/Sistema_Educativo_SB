@@ -1,3 +1,13 @@
+server:
+  port: 8083   # cambiado para evitar conflicto
+
 spring:
   application:
-    name: Cursos-Server
+    name: cursos-server
+  config:
+    import: "optional:configserver:http://localhost:8888"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
