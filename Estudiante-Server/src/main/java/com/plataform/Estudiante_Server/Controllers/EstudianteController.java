@@ -1,5 +1,4 @@
 package com.plataform.Estudiante_Server.Controllers;
-
 import com.plataform.Estudiante_Server.DTOs.EstudianteRequest;
 import com.plataform.Estudiante_Server.Services.EstudianteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 import java.util.HashMap;
 import com.plataform.Estudiante_Server.DTOs.EstudianteResponse;
-
 import jakarta.validation.Valid;
 import java.util.List;
+
 @RestController
 @RequestMapping("/estudiante")
 public class EstudianteController {
@@ -22,7 +21,6 @@ public class EstudianteController {
     public List<EstudianteResponse> listEstudiante() {
         return service.listarEstudiantes();
     }
-
     @GetMapping("/findEstudianteById/{id}")
     public ResponseEntity<EstudianteResponse> findEstudianteById(@PathVariable Long id) {
         return service.buscarEstudiantePorId(id)

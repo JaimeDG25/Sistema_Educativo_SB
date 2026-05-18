@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: Nota_Evaluacion-Server

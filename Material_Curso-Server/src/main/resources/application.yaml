@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: Material_Curso-Server

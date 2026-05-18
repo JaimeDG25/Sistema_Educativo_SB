@@ -18,20 +18,18 @@ public class UsuarioRequest {
     private Boolean ennableUsuario;
     @NotBlank(message = "El correo es obligatorio")
     private String emailUsuario;
-    @NotBlank(message = "La contraseña es obligatoria")
-    private String passwordUsuario;
+
 
     public UsuarioRequest() {
     }
 
-    public UsuarioRequest(String nameUsuario, String lastnameUsuario, String dniUsuario, RolesModel roleUsuario, Boolean ennableUsuario, String emailUsuario, String passwordUsuario) {
+    public UsuarioRequest(String nameUsuario, String lastnameUsuario, String dniUsuario, RolesModel roleUsuario, Boolean ennableUsuario, String emailUsuario) {
         this.nameUsuario = nameUsuario;
         this.lastnameUsuario = lastnameUsuario;
         this.dniUsuario = dniUsuario;
         this.roleUsuario = roleUsuario;
         this.ennableUsuario = ennableUsuario;
         this.emailUsuario = emailUsuario;
-        this.passwordUsuario = passwordUsuario;
     }
 
     public @NotBlank(message = "El nombre es obligatorio") String getNameUsuario() {
@@ -80,13 +78,5 @@ public class UsuarioRequest {
 
     public void setEmailUsuario(@NotBlank(message = "El correo es obligatorio") String emailUsuario) {
         this.emailUsuario = emailUsuario;
-    }
-
-    public @NotBlank(message = "La contraseña es obligatoria") String getPasswordUsuario() {
-        return passwordUsuario;
-    }
-
-    public void setPasswordUsuario(@NotBlank(message = "La contraseña es obligatoria") String passwordUsuario) {
-        this.passwordUsuario = passwordUsuario;
     }
 }

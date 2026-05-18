@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: Inscripcion_Estudiante_Curso-Server
