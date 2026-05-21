@@ -1,3 +1,5 @@
 spring:
   application:
     name: Asignacion_Curso_Asistente-Server
+  config:
+    import: optional:configserver:http://localhost:8888

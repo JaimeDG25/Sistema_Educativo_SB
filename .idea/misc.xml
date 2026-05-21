@@ -5,6 +5,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Cursos-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Material_Curso-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Eureka-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Config-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Asistente-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Seguridad-Server/pom.xml" />
+        <option value="$PROJECT_DIR$/Asignacion_Curso_Asistente-Server/pom.xml" />
       </list>
     </option>
   </component>

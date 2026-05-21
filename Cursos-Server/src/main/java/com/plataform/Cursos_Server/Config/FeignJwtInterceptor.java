@@ -1,13 +1,13 @@
 package com.plataform.Cursos_Server.Config;
 import feign.RequestInterceptor;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
+//import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 
 @Configuration
 public class FeignJwtInterceptor {
-    @Bean
+    /*@Bean
     public RequestInterceptor jwtInterceptor() {
         return requestTemplate -> {
             var auth = SecurityContextHolder.getContext().getAuthentication();
@@ -16,5 +16,5 @@ public class FeignJwtInterceptor {
                 requestTemplate.header("Authorization", "Bearer " + token);
             }
         };
-    }
+    }*/
 }
