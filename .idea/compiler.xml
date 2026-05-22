@@ -13,6 +13,7 @@
         <module name="Eureka-Server" />
         <module name="Cursos-Server" />
         <module name="Config-Server" />
+        <module name="Estudiante-Server" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="Asistente-Server" options="-parameters" />
       <module name="Config-Server" options="-parameters" />
       <module name="Cursos-Server" options="-parameters" />
+      <module name="Estudiante-Server" options="-parameters" />
       <module name="Eureka-Server" options="-parameters" />
       <module name="Material_Curso-Server" options="-parameters" />
       <module name="Seguridad-Server" options="-parameters" />

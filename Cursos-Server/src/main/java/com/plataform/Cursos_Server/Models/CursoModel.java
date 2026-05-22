@@ -5,17 +5,13 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "table_curso")
 public class CursoModel {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCurso;
-
     @Column(nullable = false)
     private String nombreCurso;
-
     @Column(nullable = false)
     private String descripcionCurso;
-
     @Column(nullable = false)
     private Integer creditosCurso;
 

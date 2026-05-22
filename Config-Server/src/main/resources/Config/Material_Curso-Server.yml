@@ -1,11 +1,11 @@
 server:
-  port: 8085
+  port: 8086
 
 spring:
   application:
-    name: Asignacion_Curso_Asistente-Server
+    name: Material_Curso-Server
   datasource:
-    url: jdbc:h2:mem:asignacionCursoAsistenteServicedb
+    url: jdbc:h2:mem:materialCursoServicedb
     driver-class-name: org.h2.Driver
     username: sa
     password:

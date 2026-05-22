@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "table_estudiante")
 public class EstudianteModel {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEstudiante;

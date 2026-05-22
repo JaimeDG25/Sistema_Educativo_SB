@@ -22,7 +22,6 @@ public class CursoService {
                    .map(CursoResponse::new) // convierte Model → DTO
                    .toList();
     }
-
     public Optional<CursoResponse> buscarCursoPorId(Long id) {
         return repo.findById(id)
                    .map(CursoResponse::new);
